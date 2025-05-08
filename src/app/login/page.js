@@ -44,7 +44,7 @@ export default function Login() {
             <span className="text-blue-600 text-right text-sm font-normal">forgot your password </span>
         </div>
       
-          <button type="submit" className="bg-green-700 text-white font-bold text-center text-base rounded-sm py-2 hover:scale-105 hover:shadow-xl transition-transform duration-200 ease-in-out mt-4">Create account</button>
+          <button type="submit" className="bg-[#5F8D4E] text-white font-bold text-center text-base rounded-sm py-2 hover:scale-105 hover:shadow-xl transition-transform duration-200 ease-in-out mt-4">Create account</button>
           <span className="text-gray-800 uppercase text-center font-light">or</span>
           <button className="flex flex-row justify-center items-center bg-white border border-gray-400 text-black text-center text-base  rounded-sm py-2 hover:scale-105 hover:shadow-xl transition-transform duration-200 ease-in-out"><Image  alt="google logo" className="rounded-full" src={"https://img.freepik.com/premium-vector/google-icon_1273375-870.jpg?w=826"} height={30} width={30} /><span className="ml-4 font-medium font-poppins">Signup with Google</span></button>
         </form>

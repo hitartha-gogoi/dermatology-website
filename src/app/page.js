@@ -3,6 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from 'next/navigation'
+import { FaUserPlus } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 
 export default function Home() {
 
@@ -13,13 +15,13 @@ export default function Home() {
 
       {/* GREEN NAVIGATION BAR */}
 
-      <div className="w-full h-20 bg-green-800 py-6 flex flex-row justify-between items-center">
+      <div className="w-full h-16 bg-[#285430] py-6 flex flex-row justify-between items-center">
 
         {/* PATIENTS && HOME */}
 
         <div className="flex flex-row justify-evenly items-center space-x-4 ml-4 sm:ml-20 ">
-          <span className="text-base font-bold text-white p-2 sm:p-6">Patients</span>
-          <span className="text-base font-bold text-white p-2 sm:p-6 ">Home</span>
+          <span className="text-base font-bold text-[#285430] bg-white mt-10 rounded-2xl  px-6 pt-4 pb-10">Patients</span>
+          <span className="text-base font-bold text-white mt-10 p-6 rounded-2xl  px-6 pt-4 pb-10">Home</span>
         </div>
 
       {/* PROFILE */}
@@ -28,6 +30,9 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center space-y-2">
           <Link className="self-start" href="/"><span className="text-base hidden sm:block font-bold text-white">Marvin McKinsey</span></Link>
           <Link className="self-start" href="/"><span className="text-base hidden sm:block font-light text-white">Doctor</span></Link>
+        </div>
+        <div>
+          <span className="p-4 ml-4 bg-gray-200/50 rounded-lg ">M</span>
         </div>
       </div>
    
@@ -43,7 +48,7 @@ export default function Home() {
       </div>
       
       
-      <div className="w-full h-24 flex flex-row sm:flex-nowrap flex-wrap justify-center sm:justify-between items-center mt-16 border-t-2 pt-8 sm:border-none border-gray-200 mb-6">
+      <div className="w-full h-24 flex flex-row sm:flex-nowrap flex-wrap justify-center sm:justify-between items-center  border-t-2 pt-8 sm:border-none border-gray-200">
 
         {/* HEADING FOR MOBILE SCREENS */}
         <div className="flex flex-row sm:hidden justify-center items-center ml-2 sm:ml-40">
@@ -64,8 +69,8 @@ export default function Home() {
         {/* ADD NEW PATIENT BUTTON */}
         
         <div className="flex flex-row justify-end items-center place-self-center space-y-2  mr-4 sm:mr-40">
-          <button onClick={()=> router.push('/step1')} className="hidden sm:block px-4 bg-green-600 text-base text-center text-white font-semibold w-60 h-14 rounded-md  hover:scale-105 duration-100 transition-transform ease-in-out">Add new Patient</button>
-          <button onClick={()=> router.push('/step1')} className="block sm:hidden bg-green-600 text-base text-center text-white font-semibold w-80 h-14 rounded-md  hover:scale-105 duration-100 transition-transform ease-in-out">Add Patient</button>
+          <button onClick={()=> router.push('/step1')} className="hidden sm:block px-4 bg-[#5F8D4E] text-base  text-center text-white font-semibold w-52 h-12 rounded-md  hover:scale-105 duration-100 transition-transform ease-in-out"><span className="flex flex-row items-center justify-center"><FaUserPlus size={24} className="m-2" /> Add new Patient</span></button>
+          <button onClick={()=> router.push('/step1')} className="block sm:hidden bg-[#5F8D4E] text-base text-center text-white font-semibold w-52 h-12 rounded-md  hover:scale-105 duration-100 transition-transform ease-in-out"><span className="flex flex-row items-center justify-center "><FaUserPlus size={24} className="m-2" /> Add new Patient</span></button>
         </div>
         
       </div> 
@@ -109,6 +114,7 @@ export default function Home() {
           </div>
 
           <span className="text-green-700 text-sm bg-green-100 font-normal banner-text uppercase w-48 py-2 rounded-md text-center">completed</span>
+          <FaArrowRight size={24} className="ml-8 text-neutral-800 p-2 scale-125 bg-gray-300 rounded-full hover:scale-150 duration-100 transition-transform ease-in-out" />
         </div>
 
 
@@ -134,7 +140,8 @@ export default function Home() {
            <span className="text-gray-400 self-start font-semibold hidden sm:block banner-text">5:20 PM</span>
           </div>
 
-          <span className="text-red-600 text-sm bg-red-100 font-normal banner-text uppercase w-48 py-2 rounded-md text-center">Pending</span>
+          <span className="text-red-600 text-sm bg-red-100 font-normal banner-text uppercase w-48 py-2 rounded-md text-center">Pending </span>
+          <FaArrowRight size={24} className="ml-8 text-neutral-800 p-2 scale-125 bg-gray-300 rounded-full hover:scale-150 duration-100 transition-transform ease-in-out" />
         </div>
 
 

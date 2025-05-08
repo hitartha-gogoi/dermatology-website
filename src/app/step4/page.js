@@ -17,7 +17,7 @@ export default function Step4() {
 
       {/* GREEN NAVIGATION BAR */}
 
-      <div className="w-full  h-20 bg-green-800 py-6 flex flex-row justify-between items-center">
+      <div className="w-full  h-20 bg-[#285430] py-6 flex flex-row justify-between items-center">
 
         {/* PATIENTS && HOME */}
 
@@ -57,7 +57,7 @@ export default function Step4() {
 
         <div className="flex flex-row justify-between items-center">
             <span></span>
-          <button type="submit" className="bg-green-800 text-white font-bold rounded-md text-center text-base py-2 hover:scale-105 hover:shadow-xl transition-transform duration-200 ease-in-out mt-4 uppercase w-36">next step</button>
+          <button type="submit" className="bg-[#5F8D4E] text-white font-bold rounded-md text-center text-base py-2 hover:scale-105 hover:shadow-xl transition-transform duration-200 ease-in-out mt-4 uppercase w-36">next step</button>
         </div>
        
         </form>
