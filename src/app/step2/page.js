@@ -56,6 +56,13 @@ export default function Step2() {
         <Link href="/"><span className="ml-2 text-sm font-medium text-gray-400 p-2 sm:p-6 hover:text-green-800 hover:scale-105 transition-transform duration-200 ease-in-out sm:ml-40">Patients</span></Link>
         <Link href="/"><span className="text-sm font-medium text-gray-400 p-2 sm:p-6 hover:text-green-800 hover:scale-125 duration-100 transition-transform ease-in-out">Add New Patient</span></Link>
       </div>
+
+      <div className="flex flex-row items-center mt-14 space-x-4">
+        <div className="text-gray-400 border-b-4 hidden sm:block  border-gray-400 font-semibold text-2xl pr-20">1 <span className="text-base">Basic Information</span></div>
+        <div className="text-[#5F8D4E] border-b-4 border-[#5F8D4E] font-semibold text-2xl pr-20">2 <span className="text-base">Upload Photos</span> </div>
+        <div className="text-gray-400 border-b-4 hidden sm:block  border-gray-400 font-semibold text-2xl pr-20">3 <span className="text-base">Choose Region </span></div>
+        <div className="text-gray-400 border-b-4 hidden sm:block  border-gray-400 font-semibold text-2xl pr-20">4 <span className="text-base">Payment</span> </div>
+      </div>
       
 
       {/* FORM */}
@@ -63,6 +70,16 @@ export default function Step2() {
 
       <span className="text-left sm:text-4xl text-3xl font-medium font-poppins text-black my-8">Upload Photos {firstName}</span>
         
+        <div className="flex flex-row justify-start items-center py-2 w-96">
+            <Image alt="image" height={60} width={60} className="rounded-full sm:rounded-md " src={"https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?t=st=1745325926~exp=1745329526~hmac=a1c794a76dc92e08e044600b1d73c6eca9341edecca027d57b62a8c43b965d8e&w=826"} />
+                <div className="flex flex-col justify-start items-center py-2 ml-0 sm:ml-4">
+                    <span className="text-black self-start font-normal italic banner-text ">Please upload Naked eye photo</span>
+                    <div className="flex flex-row justify-start items-start">
+                        <input type="file" className="text-green-800 bg-gray-200 rounded-md p-2 sm:w-96 md:w-66 w-56" />
+                    </div>
+            </div>
+        </div>
+
         <div className="flex flex-row justify-start items-center py-2 w-96">
             <Image alt="image" height={60} width={60} className="rounded-full sm:rounded-md " src={"https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?t=st=1745325926~exp=1745329526~hmac=a1c794a76dc92e08e044600b1d73c6eca9341edecca027d57b62a8c43b965d8e&w=826"} />
                 <div className="flex flex-col justify-start items-center py-2 ml-0 sm:ml-4">

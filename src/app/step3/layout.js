@@ -1,5 +1,9 @@
 import { Geist, Geist_Mono, Sixtyfour_Convergence, Inter_Tight, Orbitron, Sacramento, Poppins  } from "next/font/google";
 import "../globals.css";
+import "../variables.css"
+import '../App.css'
+import '../HumanBody.css'
+import '../menbody.css'
 import { ContextProvider } from '../../context/context'
 
 export const metadata = {
