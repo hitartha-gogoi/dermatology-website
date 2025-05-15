@@ -32,7 +32,7 @@ export default function Home() {
           <Link className="self-start" href="/"><span className="text-base hidden sm:block font-light text-white">Doctor</span></Link>
         </div>
         <div>
-          <span className="p-4 ml-4 bg-gray-200/50 rounded-lg ">M</span>
+          <span className="p-4 ml-16  bg-gray-200/50 rounded-lg ">M</span>
         </div>
       </div>
    
@@ -41,8 +41,8 @@ export default function Home() {
 
       {/* WHITE NAVIGATION BAR */}
 
-      <div className="flex flex-row justify-start items-center w-full space-x-0 sm:space-x-10 py-6">
-        <Link href="/"><span className="ml-2 text-sm font-medium text-gray-400 p-2 sm:p-2 hover:bg-green-100 rounded-md hover:text-green-800 hover:scale-105 transition-transform duration-200 ease-in-out sm:ml-40">All Patients</span></Link>
+      <div className="flex flex-row justify-start items-center w-full space-x-0 sm:space-x-10 py-6 sm:mr-20">
+        <Link href="/"><span className=" text-sm font-medium text-gray-400 p-2 sm:p-2 hover:bg-green-100 rounded-md hover:text-green-800 hover:scale-105 transition-transform duration-200 ease-in-out sm:ml-40">All Patients</span></Link>
         <Link href="/"><span className="text-sm font-medium text-gray-400 p-2 sm:p-2 hover:bg-green-100 rounded-md hover:text-green-800 hover:scale-125 duration-100 transition-transform ease-in-out">Pending</span></Link>
         <Link href="/"><span className="text-sm font-medium text-gray-400 p-2 sm:p-2 hover:bg-green-100 rounded-md hover:text-green-800 hover:scale-125 duration-100 transition-transform ease-in-out">Completed</span></Link>
       </div>
